@@ -1,3 +1,28 @@
+
+:host{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* 
+This is for formatting the material drawer around the navbar
+Implementing it directly into navbar will NOT WORK
+*/
+mat-drawer{
+  width: 260px;
+  background: rgb(229, 106, 46);
+}
+
+/* 
+This is for formatting the material drawer-container around the navbar
+This makes it so that the orange bar height is the same height as any screen
+*/
+mat-drawer-container{
+  height: 100%;
+  
+}
+
 p {
-  color: red;
+  color: black;
 }

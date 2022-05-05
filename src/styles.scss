@@ -44,3 +44,31 @@ $quaternary-color: #000;
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.welcome {
+  font-size: 32px;
+  padding: 10px;
+  max-width: 75%;
+  max-height: 75%;
+  
+  margin: auto;
+  background-color: rgb(229, 106, 46);
+  
+  border-radius: 2.5%;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+}
+
+//https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll
+::-webkit-scrollbar{
+  display: none;
+  -ms-overflow-style: none; /* Edge, Internet Explorer */
+  scrollbar-width: none; /* Firefox */
+  overflow-y: scroll;
+}
+
+h1 { text-align: center;}
