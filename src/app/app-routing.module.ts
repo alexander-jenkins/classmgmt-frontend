@@ -8,6 +8,7 @@ import { ManageClassesComponent } from './manage-classes/manage-classes.componen
 import { ManageCoursesComponent } from './manage-courses/manage-courses.component';
 import { ManageSemesterComponent } from './manage-semester/manage-semester.component';
 import { ManageStudentsComponent } from './manage-students/manage-students.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 import { StudentHomeComponent } from './student-home/student-home.component';
 import { ViewClassComponent } from './view-class/view-class.component';
 import { ViewGradesComponent } from './view-grades/view-grades.component';
@@ -25,6 +26,7 @@ const routes: Routes = [
   {path:'viewclass', component:ViewClassComponent},
 
   {path:'studenthome', component:StudentHomeComponent},
+  {path:'schedule', component:ScheduleComponent},
   {path:'enrollclass', component:EnrollClassComponent},
   {path:'coursestatuses', component:CourseStatusesComponent},
   {path:'viewgrades', component:ViewGradesComponent}
