@@ -1,2 +1,52 @@
-<p>navbar works!</p>
-<button>Home</button>
+<mat-nav-list>
+    <!-- Logo -->
+    <div class="logo">
+        <p>Church of Philippi</p>
+    </div>
+    <mat-divider></mat-divider>
+
+    <!-- list item, router links to page -->
+    <a mat-list-item routerLink="/studenthome" routerLinkActive="list-item-active">
+        <mat-icon>home</mat-icon> Student Home
+    </a>
+    <a mat-list-item routerLink="/adminhome" routerLinkActive="list-item-active">
+        <mat-icon>home</mat-icon> Admin Home
+    </a>
+    <a mat-list-item routerLink="/instructorhome" routerLinkActive="list-item-active">
+        <mat-icon>home</mat-icon> Instructor Home
+    </a>
+
+    <!-- Admin Navbar -->
+    <a mat-list-item routerLink="/managecourse" routerLinkActive="list-item-active">
+        <mat-icon>edit</mat-icon> Manage Courses
+    </a>
+    <a mat-list-item routerLink="/manageclasses" routerLinkActive="list-item-active">
+        <mat-icon>edit</mat-icon> Manage Classes
+    </a>
+    <a mat-list-item routerLink="/managesemester" routerLinkActive="list-item-active">
+        <mat-icon>edit</mat-icon> Manage Semester
+    </a>
+    <a mat-list-item routerLink="/managestudents" routerLinkActive="list-item-active">
+        <mat-icon>edit</mat-icon> Manage Students
+    </a>
+
+
+    <!-- Teacher Navbar (includes manage students) -->
+    <a mat-list-item routerLink="/viewclass" routerLinkActive="list-item-active">
+        <mat-icon>class</mat-icon> View Class
+    </a>
+    
+
+    <!-- Student Navbar  -->
+    <a mat-list-item routerLink="/coursestatuses" routerLinkActive="list-item-active">
+        <mat-icon>class</mat-icon> Course Statuses
+    </a>
+    <a mat-list-item routerLink="/enrollclass" routerLinkActive="list-item-active">
+        <mat-icon>class</mat-icon> Enroll Class
+    </a>
+    <a mat-list-item routerLink="/viewgrades" routerLinkActive="list-item-active">
+        <mat-icon>class</mat-icon> View Grades
+    </a>
+
+    
+</mat-nav-list>

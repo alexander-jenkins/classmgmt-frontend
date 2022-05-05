@@ -1,1 +1,14 @@
-<app-student-home> </app-student-home>
+<!-- Sidebar Tutrial: https://www.youtube.com/watch?v=sON9WnBDjJg -->
+
+<mat-drawer-container>
+    <!-- Drawer creates the sidebar for the navbar contents -->
+    <mat-drawer mode="side" [opened]="sideBarOpen">
+        <app-navbar></app-navbar>
+    </mat-drawer>
+
+    
+    <mat-drawer-content>
+        <app-title-bar (toggleSidebarForMe)="sideBarToggler()"></app-title-bar>
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+</mat-drawer-container>

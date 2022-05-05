@@ -1,3 +1,23 @@
+<mat-toolbar>
+    <!-- Its it the top row -->
+    <mat-toolbar-row class="justify-content-between">
+        <button mat-icon-button (click)="toggleSidebar()"><mat-icon>menu</mat-icon></button>
+        <div class="row">
+            <ul>
+                <li>
+                    <button mat-button [matMenuTriggerFor]="menu" class="user">
+                        User Name<mat-icon>keyboard_arrow_down</mat-icon>
+                    </button>
 
-<p>title content</p>
-
+                    <mat-menu #menu="matMenu" >
+                        <button>
+                            <mat-icon>exit_to_app</mat-icon>
+                            Logout
+                        </button>
+                    </mat-menu>
+                    
+                </li>
+            </ul>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>
