@@ -10,7 +10,58 @@
     <mat-icon>home</mat-icon> Home
   </a>
 
-  <div class="container" id="admin-nav">
+  <div
+    class="container"
+    id="student-nav"
+    *ngIf="userType == 'student' || userType == 'debug'"
+  >
+    <!-- Student Navbar  -->
+    <a mat-list-item routerLink="/schedule" routerLinkActive="list-item-active">
+      <mat-icon>class</mat-icon> Schedule
+    </a>
+    <a
+      mat-list-item
+      routerLink="/enrollclass"
+      routerLinkActive="list-item-active"
+    >
+      <mat-icon>class</mat-icon> Enroll Class
+    </a>
+    <a
+      mat-list-item
+      routerLink="/viewgrades"
+      routerLinkActive="list-item-active"
+    >
+      <mat-icon>class</mat-icon> View Grades
+    </a>
+  </div>
+
+  <div
+    class="container"
+    id="instructor-nav"
+    *ngIf="userType == 'instructor' || userType == 'debug'"
+  >
+    <!-- Instructor Navbar -->
+    <a
+      mat-list-item
+      routerLink="/managestudents"
+      routerLinkActive="list-item-active"
+    >
+      <mat-icon>edit</mat-icon> Manage Students
+    </a>
+    <a
+      mat-list-item
+      routerLink="/viewclass"
+      routerLinkActive="list-item-active"
+    >
+      <mat-icon>edit</mat-icon> View Class
+    </a>
+  </div>
+
+  <div
+    class="container"
+    id="admin-nav"
+    *ngIf="userType == 'admin' || userType == 'debug'"
+  >
     <!-- Admin Navbar -->
     <a
       mat-list-item
@@ -47,35 +98,7 @@
       routerLink="/viewclass"
       routerLinkActive="list-item-active"
     >
-      <mat-icon>class</mat-icon> View Class
-    </a>
-  </div>
-
-  <div class="container" id="student-nav">
-    <!-- Student Navbar  -->
-    <a mat-list-item routerLink="/schedule" routerLinkActive="list-item-active">
-      <mat-icon>class</mat-icon> Schedule
-    </a>
-    <a
-      mat-list-item
-      routerLink="/coursestatuses"
-      routerLinkActive="list-item-active"
-    >
-      <mat-icon>class</mat-icon> Course Statuses
-    </a>
-    <a
-      mat-list-item
-      routerLink="/enrollclass"
-      routerLinkActive="list-item-active"
-    >
-      <mat-icon>class</mat-icon> Enroll Class
-    </a>
-    <a
-      mat-list-item
-      routerLink="/viewgrades"
-      routerLinkActive="list-item-active"
-    >
-      <mat-icon>class</mat-icon> View Grades
+      <mat-icon>edit</mat-icon> View Class
     </a>
   </div>
 </mat-nav-list>

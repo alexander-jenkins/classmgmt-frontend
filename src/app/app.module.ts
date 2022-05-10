@@ -14,7 +14,6 @@ import { ManageSemesterComponent } from './manage-semester/manage-semester.compo
 import { ManageStudentsComponent } from './manage-students/manage-students.component';
 import { ViewClassComponent } from './view-class/view-class.component';
 import { EnrollClassComponent } from './enroll-class/enroll-class.component';
-import { CourseStatusesComponent } from './course-statuses/course-statuses.component';
 import { ViewGradesComponent } from './view-grades/view-grades.component';
 import { HomeComponent } from './home/home.component';
 
@@ -30,7 +29,6 @@ import { HomeComponent } from './home/home.component';
     ManageStudentsComponent,
     ViewClassComponent,
     EnrollClassComponent,
-    CourseStatusesComponent,
     ViewGradesComponent,
     HomeComponent,
   ],
