@@ -1,39 +1,55 @@
 .mat-icon {
-    vertical-align: center;
-    margin-right: 1rem;
+  vertical-align: center;
+  margin-right: 1rem;
 }
 
-.mat-divider{
-    border-top-color: 2px;
-    border-color: black;
+.mat-divider {
+  border-top-color: 2px;
+  border-color: black;
 }
 
-// According to w3schools: !important rule in CSS is used 
+// According to w3schools: !important rule in CSS is used
 // to add more importance to a property/value than normal
 .mat-list-item {
-    color: black !important;
-    height: 44px !important;
+  color: black !important;
+  height: 44px !important;
 
-    &:hover {
-        background-color: rgb(104, 140, 203);
-    }
+  &:hover {
+    background-color: rgb(104, 140, 203);
+  }
 }
 
 // When the link is active the background color changes to blue
 .list-item-active {
-    background-color: rgb(104, 140, 203);
+  background-color: rgb(104, 140, 203);
 
-    //makes it so that the active link stays blue when mouse isnt hovering
-    ::ng-deep {
-        .mat-list-item-content {
-            background-color: rgb(104, 140, 203);
-            &:hover {
-                background:rgb(104, 140, 203);
-            }
-        }
+  //makes it so that the active link stays blue when mouse isnt hovering
+  ::ng-deep {
+    .mat-list-item-content {
+      background-color: rgb(104, 140, 203);
+      &:hover {
+        background: rgb(104, 140, 203);
+      }
     }
-    
+  }
 }
 p {
-    text-align: center;
+  text-align: center;
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+}
+
+#student-nav {
+  background-color: pink;
+}
+
+#admin-nav {
+  background-color: lightblue;
+}
+
+#instructor-nav {
+  background-color: lightgreen;
 }
